@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title> <span text-color="my-custom-color">{{ nombre }}</span></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+    <div></div>
+        <img src={{img}}  class="margen">
+    
+      <div class="card-title">{{ nombre }}</div>
+      <div class="card-title">{{ titulo }}</div>
+</ion-item>
+<ion-item>
+  <button ion-button class="submit-btn" full type="submit" (click)="regresar()">Regresar</button>
+</ion-item>
+</ion-content>

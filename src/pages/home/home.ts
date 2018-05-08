@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { ShowPage } from '../show/show';
 
 @Component({
   selector: 'page-home',
@@ -37,8 +38,10 @@ export class HomePage {
   }
 
   call(img, nombre, titulo){
-    console.log("Hola");
+    console.log(img);
     console.log(nombre);
     console.log(titulo);
+    this.navCtrl.push(ShowPage, {img: img, nombre: nombre, titulo: titulo});
+
   }
 }
